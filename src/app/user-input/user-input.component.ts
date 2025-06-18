@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormInputs } from './user.model';
 
 @Component({
   selector: 'app-user-input',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './user-input.component.css'
 })
 export class UserInputComponent {
-
+   
 }
