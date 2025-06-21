@@ -18,7 +18,9 @@ export class AppComponent {
     annualInvestment: number,
     totalInterest: number,
     totalAmountInvested: number
-  } 
+  }[];
+
+  
 
   calculateInvestmentResults(data: InvestmentInput) {
 
@@ -41,7 +43,8 @@ export class AppComponent {
         totalAmountInvested: initialInvestment + annualInvestment * year,
       });
     }
+    console.log(annualData);
+    this.resultsData = annualData;
     
-    return annualData;
   }
 }
