@@ -1,23 +1,53 @@
+<form (ngSubmit)="onSubmit()" action="">
 
-<form action="">
-
-
-
-  <label for="">INITIAL INVESTMENT</label>
-  <input type="number" id="name" name="name" required><br><br>
-
-  <label for="">ANNUAL INVESTMENT</label>
-  <input type="number" id="name" name="name" required><br><br>
-
-  <label for="">EXPECTED RETURN</label>
-  <input type="number" id="name" name="name" required><br><br>
-
-  <label for="">DURATION</label>
-  <input type="number" id="name" name="name" required><br><br>
-
-
+<div class="input-group">
+  <p>
+    <label for="initial-Investment">INITIAL INVESTMENT</label>
+    <input [(ngModel)]="initialInvestment" type="number" id="initial-Investment" name="initial-Investment" required><br><br>
+  </p>
+  <p>
+    <label for="annual-Investment">ANNUAL INVESTMENT</label>
+    <input [(ngModel)]="annualInvestment" type="number" id="annual-Investment" name="annual-Investment" required><br><br>
+  </p> 
+</div>
+ 
+<div class="input-group">
+  <p>
+    <label for="expected-return">EXPECTED RETURN</label>
+    <input [(ngModel)]="expectedReturn" type="number" id="expected-return" name="expected-return" required><br><br>
+  </p>
+  <p>
+    <label for="duration">DURATION</label>
+    <input [(ngModel)]="duration" type="number" id="duration" name="duration" required><br><br>
+  </p>
+</div>
 
   <button type="submit">CALCULATE</button>
+
+
+
+ 
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Investment Value</th>
+        <th>Interest (Year)</th>
+        <th>Total Interest</th>
+        <th>Invested Capital</th>
+      </tr>
+    </thead>
+    <tbody>
+   
+      <tr>
+        <td>2</td>
+        <td>24</td>
+        <td>8</td>
+        <td>[New York]</td>
+      </tr>
+      
+    </tbody>
+  </table>
 
 </form>
 

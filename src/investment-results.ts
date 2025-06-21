@@ -4,11 +4,11 @@
 
 function calculateInvestmentResults() {
   const annualData = [];
-  let investmentValue = initialInvestment;
+  let investmentValue = initialInvestment;          //10000
 
   for (let i = 0; i < duration; i++) {
     const year = i + 1;
-    const interestEarnedInYear = investmentValue * (expectedReturn / 100);
+    const interestEarnedInYear = investmentValue * (expectedReturn / 100);     // 10000 * (5,5 / 100)
     investmentValue += interestEarnedInYear + annualInvestment;
     const totalInterest =
       investmentValue - annualInvestment * year - initialInvestment;
