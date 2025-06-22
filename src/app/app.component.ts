@@ -15,17 +15,8 @@ export class AppComponent {
   constructor (private investmentService: InvestmentService) {
 
   }
-  resultsData? : {
-    year: number,
-    interest: number,
-    valueEndOfYear: number,
-    annualInvestment: number,
-    totalInterest: number,
-    totalAmountInvested: number
-  }[];
-
-  
+    
   calculateInvestmentResults(data: InvestmentInput) {
-    this.resultsData = this.investmentService.calculateInvestmentResults(data);
+    
   }
 }
